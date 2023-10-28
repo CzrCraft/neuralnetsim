@@ -5,10 +5,6 @@ const maxNeuronId = 1000000000
 // max is also min so its like this
 // -max < randRange() < max
 
-// TODO: ADD SETS FOR WEIGHTS, NEURON BIASES AND SO ON
-// currently they're kind of private to avoid bugs
-// also im planning to use genetic algorithms with this so no backpropagation need theorethically yet
-
 function leakyRelu(x) {
     if (x > 0) {
         return x
