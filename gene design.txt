@@ -1,0 +1,42 @@
+// gene design
+
+[firstNeuron, secondNeuron]
+[[type, id, bias], [type, id, bias]]
+
+neuron:
+{
+	first:{
+		type: 
+		id: 
+		bias: 
+	},
+	second:{
+		type: 
+		id: 
+		bias: 
+	},
+	weight: 
+}
+
+type: {
+	0: input
+	1: normal
+	2: output
+}
+
+
+// mutation
+if should mutate:
+	1.add gene // should be very rare
+	2.modify gene:
+		1.modifiy first
+		2.modifiy second
+		3.modify con weight
+// rn i don't think that neuron removal should be a thing
+// but in the future if they take up too much space prob make them get removed if they have like weight 0 or sum
+
+steps:
+	1. decide to modify current gene(pick rand nr from 0-100 and if nr is smaller then mutation rate)
+	2. make a list to decide: [add,modFirst,modSecond,modWeight,add,modFirst,modSecond,modWeight,add]
+	3. 9 list elements, pick a nr from 0-8
+	4. do the thing
